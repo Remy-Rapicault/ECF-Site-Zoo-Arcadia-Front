@@ -1,0 +1,501 @@
+/*reset*/
+:root {
+    font-size: 14px;
+    --primary: #49552A;
+    --secondary: #BC9D60;
+    --dark: #392C1E;
+    --bg_dark: #292222;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Stylisation générale */
+
+h2 {
+    text-align: center;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 32px;
+    color: var(--secondary);
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'hind madurai', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* START : Stylisation du header */
+
+header {
+        width: 100%;
+        height: 110px;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 16px;
+        background-color: var(--dark);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+header img {
+    margin: 5px;
+}
+
+/* nav menu */
+
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+nav .main_pages a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav a:hover 
+{
+    background: #5A5766;
+}
+
+/* menu burger responsive*/
+.menu_burger
+{
+    display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    nav
+    {
+        height: 60px;
+    }
+
+    nav .main_pages 
+    {
+        display: none;
+    }
+
+    .menu_burger
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        margin: 0 15px 0 0 ;
+    }
+}
+
+.menu_burger, #toggle
+{
+    display: none;
+}
+
+@media screen and (max-width: 1024px)
+{
+    nav
+    {
+        height: 60px;
+    }
+
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: var(--bg_dark);
+        height: 300px;
+        position: relative;
+    }
+
+    nav .main_pages a {
+        width: 50%;
+    }
+
+    .menu_burger
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+        margin: 0 15px 0 0 ;
+    }
+
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+
+/* Stylisation de la COUVERTURE */
+
+.cover {
+    width: 100%;
+    height: 320px;
+    background-image: url(../image/big_title_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-title {
+    font-size: 32px;
+    margin: 0 auto;
+}
+
+.cover-intro {
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.cover-text {
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+/* FIN de Stylisation de la COUVERTURE */
+
+/* Stylisation de la section Bienvenue */
+
+.welcome {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.welcome-cover {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+}
+
+.welcome-text {
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.4;
+    font-family: 'Hind madurai', sans-serif ;
+}
+
+.welcome-figure {
+    width: 85%;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+}
+
+.welcome-figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Stylisation de la section Habitats */
+
+.habitats_section {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bg_dark);
+}
+
+.habitats_section p {
+    font-family: 'hind madurai', sans-serif;
+    font-size: 14px;
+    color: var(--secondary);
+
+}
+
+.habitats_together {
+    width: 300;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.habitats_section img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.habitats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stylisation de la section Services */
+
+.services_section p {
+    font-family: 'Hind madurai', sans-serif ;
+}
+
+.services_together {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.services_section img {
+    width: 300px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    font-family: 'hind madurai', sans-serif;
+    font-size: 14px;
+    width: 86px;
+    height: 26px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+/* FIN Stylisation de la section Services */
+
+/* Stylisation de la section  meilleurs avis */
+
+.best_comment {
+    width: 100%;
+    height: 150px;
+    background-color: var(--secondary);
+}
+
+/* FIN Stylisation de la section meilleurs avis */
+
+/* Stylisation de la section formulaire avis */
+
+.form_opinion {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_opinion textarea {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.pseudo {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.opinion {
+    margin: 0 auto;
+}
+
+
+.comment {
+    width: 100%;
+    font-family: 'hind madurai', sans-serif;
+    font-size: 12px;
+    margin: 5px;
+}
+
+.button_submit {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto
+}
+
+/* FIN Stylisation de la section formulaire avis */
+
+/* Stylisation du footer */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--dark);
+    color: #ffffff;
+    font-family: 'hind madurai', sans-serif;
+    font-size: 12px;
+}
+
+.hours_info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 5px;
+    padding: 10px;
+}
+
+@media screen and (min-width:768px) 
+{
+
+    /* Bienvenue */
+    .welcome-cover {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+}
+
+    .welcome-cover div {
+        width: 49%;
+}
+
+    .welcome-text {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+        line-height: 1.4;
+        font-family: 'Hind madurai', sans-serif ;
+}
+
+    .welcome-figure {
+        width: 49%;
+        padding: 5px;
+        margin: auto;
+        justify-content: center;
+        object-fit: cover;
+}
+
+    .welcome-figure img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+}
+
+.habitats_together {
+    width: 300;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+}
+
+@media screen and (min-width:1024px) 
+{
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Bienvenue 
+    .welcome {
+        width: 90%;
+    }
+
+    .welcome-cover {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .welcome-cover div {
+        width: 49%;
+    }
+
+    .welcome-text {
+        display: flex;
+        text-align: right;
+        width: 50%;
+        line-height: 1.4;
+        font-family: 'Hind madurai', sans-serif ;
+        font-size: 1.3rem;
+        margin-right: 0;
+    }
+
+    .welcome-text p {
+        height: 50px;
+    }
+
+    .welcome-figure {
+        width: 49%;
+        padding: 5px;
+    }
+
+    .welcome-figure img {
+        width: 45%;
+        object-fit: cover;
+        border-radius: 10px;
+    }*/
+
+}

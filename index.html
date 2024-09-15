@@ -13,25 +13,33 @@
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <div class="logo_header">
-            <a href="pages/home.html">
-            <img src="image/ZOO Arcadia.png" alt="Logo de ma page" width="100px" height="100px">
-            </a>
-        </div>
-        
         <!-- Navigation -->
-    <nav>
-        <label class="menu_burger" for="toggle"><i class="bi bi-list"></i></label>
-        <input type="checkbox" id="toggle">
-        <div class="main_pages">
-            <a href="index.html">Accueil</a>
-            <a href="services.html">Services</a>
-            <a href="habitats.html">Habitats</a>
-            <a href="connexion.html">Connexion</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="image/ZOO Arcadia.png" alt="Logo de ma page" width="100px" height="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Habitats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Connexion/Déconnection</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>              
+                </ul>
+            </div>
+        </nav>
 
     <!-- Fin de la navigation -->
     </header>

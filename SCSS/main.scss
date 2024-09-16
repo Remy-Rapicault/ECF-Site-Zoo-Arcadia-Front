@@ -19,7 +19,7 @@ footer.footer {
 
 p {
     font-family: $font-family-serif;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .hero-scene{
@@ -51,3 +51,8 @@ p {
         justify-content: center;
     }
 }
+
+.text-justify {
+    text-align: justify;
+}
+

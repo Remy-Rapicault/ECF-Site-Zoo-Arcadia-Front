@@ -12017,4 +12017,39 @@ p {
 
 .text-justify {
   text-align: justify;
+}
+
+.hero-scene-services {
+  position: relative;
+}
+.hero-scene-services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/Les_habitats.png);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-scene-services * {
+  position: relative;
+}
+.hero-scene-services .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

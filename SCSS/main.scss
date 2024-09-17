@@ -1,6 +1,137 @@
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
 @import '_custom';
 
+// Importation des polices Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+// Variables de polices
+$font-title: 'Montserrat', sans-serif;
+$font-body: 'Hind Madurai', sans-serif;
+
+// Bootstrap variables (pour override si besoin)
+$font-size-base: 1rem; // Taille de police par défaut
+$line-height-base: 1.6; // Hauteur de ligne pour les paragraphes
+
+// Typographie générale mobile first
+body {
+    font-family: $font-body; // Police par défaut pour tout le texte
+    font-size: $font-size-base; // Taille de police de base
+    line-height: $line-height-base; // Espacement vertical confortable
+    padding: 0;
+    margin: 0;
+}
+
+// Stylisation des titres (mobile first)
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+    margin: 0 0 1rem; // Espacement standard sous les titres
+}
+
+// Taille des titres pour mobile (petits écrans)
+h1 {
+    font-size: 2rem;
+    font-weight: 900; // Graisse forte pour le h1
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700; // Graisse modérée pour le h2
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+// Paragraphe mobile first
+p {
+    font-family: $font-body;
+  font-weight: 400; // Poids régulier
+  font-size: 1rem; // Taille par défaut sur mobile
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+// Responsive pour tablettes et grands écrans
+@media (min-width: 768px) {
+    h1 {
+    font-size: 3rem; // Augmentation de la taille sur les écrans moyens
+    }
+
+    h2 {
+    font-size: 2.5rem;
+    }  
+
+    h3 {
+    font-size: 2rem;
+    }
+
+    h4 {
+    font-size: 1.75rem;
+    }
+
+    h5 {
+    font-size: 1.5rem;
+    }
+
+    h6 {
+    font-size: 1.25rem;
+    }
+
+    p {
+    font-size: 1.125rem; // Texte légèrement plus grand sur les écrans moyens
+    }
+}
+
+// Responsive pour les grands écrans
+@media (min-width: 1200px) {
+    h1 {
+    font-size: 4rem; // Grand titre sur les grands écrans
+    }
+
+    h2 {
+    font-size: 3.5rem;
+    }
+
+    h3 {
+    font-size: 3rem;
+    }
+
+    h4 {
+    font-size: 2.5rem;
+    }
+
+    h5 {
+    font-size: 2rem;
+    }
+
+    h6 {
+    font-size: 1.75rem;
+    }
+
+    p {
+    font-size: 1.25rem; // Texte encore plus grand sur les grands écrans
+    }
+}
+
+
+
 html {
     position: relative;
     min-height: 100%;
@@ -10,16 +141,11 @@ main {
     margin-bottom: 250px;
 }
 
-footer.footer {
+footer{
     padding: 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-p {
-    font-family: $font-family-serif;
-    font-size: 12px;
 }
 
 .hero-scene{
@@ -125,3 +251,42 @@ p {
     height: 250px;
     object-fit: cover;
 }
+
+.hero-scene-savane {
+    position: relative;
+    &::before{
+        content:"";
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../image/Savane.jpg);
+        background-position: center;
+        background-size: cover;
+        filter: brightness(0.3);
+        object-fit: cover;
+    }
+    *{
+        //Positionner les éléments devant le ::before
+        position:relative;
+    }
+
+    .hero-scene-content{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Style général pour les animaux
+
+    .animals-savane img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+    }
+
+

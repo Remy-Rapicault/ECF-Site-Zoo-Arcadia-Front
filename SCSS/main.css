@@ -12083,6 +12083,7 @@ footer {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12115,6 +12116,7 @@ footer {
 
 .hero-scene-services {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene-services::before {
   content: "";
@@ -12150,6 +12152,7 @@ footer {
 
 .hero-scene-habitats {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene-habitats::before {
   content: "";
@@ -12185,6 +12188,7 @@ footer {
 
 .hero-scene-savane {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene-savane::before {
   content: "";
@@ -12215,4 +12219,62 @@ footer {
   width: 95px;
   height: 95px;
   border-radius: 50%;
+}
+
+.hero-scene-connexion {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero-scene-connexion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/espace_connexion.png);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-scene-connexion * {
+  position: relative;
+}
+.hero-scene-connexion .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-scene-inscription {
+  position: relative;
+  margin-bottom: 15px;
+}
+.hero-scene-inscription::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/espace_connexion.png);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.3);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-scene-inscription * {
+  position: relative;
+}
+.hero-scene-inscription .hero-scene-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

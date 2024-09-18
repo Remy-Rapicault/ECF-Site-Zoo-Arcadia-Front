@@ -11983,22 +11983,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h2, .h2 {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3, .h3 {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h4, .h4 {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h5, .h5 {
@@ -12011,6 +12011,14 @@ h6, .h6 {
   font-weight: 400;
 }
 
+.profil_animals {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 p {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 400;
@@ -12021,48 +12029,55 @@ p {
 
 @media (min-width: 768px) {
   h1, .h1 {
-    font-size: 3rem;
-  }
-  h2, .h2 {
     font-size: 2.5rem;
   }
-  h3, .h3 {
+  h2, .h2 {
     font-size: 2rem;
   }
-  h4, .h4 {
+  h3, .h3 {
     font-size: 1.75rem;
   }
-  h5, .h5 {
+  h4, .h4 {
     font-size: 1.5rem;
   }
-  h6, .h6 {
+  h5, .h5 {
     font-size: 1.25rem;
   }
-  p {
+  h6, .h6 {
     font-size: 1.125rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .profil_animals {
+    width: 142.5px;
+    height: 142.5px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 4rem;
-  }
-  h2, .h2 {
     font-size: 3.5rem;
   }
-  h3, .h3 {
+  h2, .h2 {
     font-size: 3rem;
   }
-  h4, .h4 {
+  h3, .h3 {
     font-size: 2.5rem;
   }
-  h5, .h5 {
+  h4, .h4 {
     font-size: 2rem;
   }
-  h6, .h6 {
+  h5, .h5 {
     font-size: 1.75rem;
   }
-  p {
+  h6, .h6 {
     font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }
 html {
@@ -12092,7 +12107,6 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../image/big_title_img.jpg);
   background-position: center;
   background-size: cover;
   filter: brightness(0.3);
@@ -12110,37 +12124,32 @@ footer {
   justify-content: center;
 }
 
-.text-justify {
-  text-align: justify;
+.hero-scene-default::before {
+  background-image: url(../image/big_title_img.jpg);
 }
 
-.hero-scene-services {
-  position: relative;
-  margin-bottom: 15px;
-}
 .hero-scene-services::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-image: url(../image/Les_habitats.png);
-  background-position: center;
-  background-size: cover;
-  filter: brightness(0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.hero-scene-services * {
-  position: relative;
+
+.hero-scene-habitats::before {
+  background-image: url(../image/Les_habitats.png);
 }
-.hero-scene-services .hero-scene-content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.hero-scene-savane::before {
+  background-image: url(../image/Savane.jpg);
+}
+
+.hero-scene-jungle::before {
+  background-image: url(../image/Jungle.png);
+}
+
+.hero-scene-marais::before {
+  background-image: url(../image/Marais.png);
+}
+
+.hero-scene-connexion::before {
+  background-image: url(../image/espace_connexion.png);
 }
 
 .services img {
@@ -12150,131 +12159,9 @@ footer {
      object-fit: cover;
 }
 
-.hero-scene-habitats {
-  position: relative;
-  margin-bottom: 15px;
-}
-.hero-scene-habitats::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/Les_habitats.png);
-  background-position: center;
-  background-size: cover;
-  filter: brightness(0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.hero-scene-habitats * {
-  position: relative;
-}
-.hero-scene-habitats .hero-scene-content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .section_habitats img {
   width: 250px;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.hero-scene-savane {
-  position: relative;
-  margin-bottom: 15px;
-}
-.hero-scene-savane::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/Savane.jpg);
-  background-position: center;
-  background-size: cover;
-  filter: brightness(0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.hero-scene-savane * {
-  position: relative;
-}
-.hero-scene-savane .hero-scene-content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.animals-savane img {
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
-}
-
-.hero-scene-connexion {
-  position: relative;
-  margin-bottom: 15px;
-}
-.hero-scene-connexion::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/espace_connexion.png);
-  background-position: center;
-  background-size: cover;
-  filter: brightness(0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.hero-scene-connexion * {
-  position: relative;
-}
-.hero-scene-connexion .hero-scene-content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-scene-inscription {
-  position: relative;
-  margin-bottom: 15px;
-}
-.hero-scene-inscription::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../image/espace_connexion.png);
-  background-position: center;
-  background-size: cover;
-  filter: brightness(0.3);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.hero-scene-inscription * {
-  position: relative;
-}
-.hero-scene-inscription .hero-scene-content {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

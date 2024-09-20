@@ -12152,6 +12152,10 @@ footer {
   background-image: url(../image/espace_connexion.png);
 }
 
+hero-scene-simba::before {
+  background-image: url(../image/Savane.jpg);
+}
+
 .services img {
   width: 200px;
   height: 200px;

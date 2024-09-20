@@ -170,6 +170,8 @@ $hero-bg-savane: url(../image/Savane.jpg);
 $hero-bg-jungle: url(../image/Jungle.png);
 $hero-bg-marais: url(../image/Marais.png);
 $hero-bg-connexion: url(../image/espace_connexion.png);
+$hero-bg-simba: url(../image/Savane.jpg);
+
 
 .hero-scene {
     position: relative;
@@ -228,6 +230,10 @@ $hero-bg-connexion: url(../image/espace_connexion.png);
 
 .hero-scene-connexion::before {
     background-image: $hero-bg-connexion;
+}
+
+hero-scene-simba::before {
+    background-image: $hero-bg-simba;
 }
 
 .services img {
